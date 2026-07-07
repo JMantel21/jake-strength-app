@@ -1,49 +1,31 @@
-# Jake's Strength App — PWA
+# Jake's Strength App — Version 0.2
 
-This is the next build step: an installable Progressive Web App.
+This is the first feature upgrade after the initial deployed PWA.
 
-## What this version includes
+## New in v0.2
 
-- Phone-friendly app UI
-- Full 12-week workout program
-- Starts Monday, July 6, 2026
-- Complete workout button
-- Skip / Push Back button
-- Saved progress using localStorage
-- Offline support through a service worker
-- Web app manifest
-- iPhone/iPad Home Screen support
-- Windows Chrome/Edge install support
-- App icons
+- Dashboard tab
+- Today's workout progress card
+- Exercise checkboxes
+- Core exercise checkboxes
+- Rest timer with 1:00, 1:30, and 2:00 presets
+- Workout notes
+- Workout completion streak
+- Completion percentage
+- Coach note on dashboard
+- Improved local progress storage
+- Existing complete workout and skip/push-back logic retained
 
-## How to use locally
+## Deployment
 
-Because service workers usually require a local web server, do this on Windows:
+Replace the files in your GitHub Pages repo with the contents of this folder, then commit and push.
 
-1. Unzip the folder.
-2. Open PowerShell in the folder.
-3. Run:
+Important files:
+- index.html
+- program.json
+- manifest.webmanifest
+- service-worker.js
+- assets/icon-192.png
+- assets/icon-512.png
 
-python -m http.server 8000
-
-4. Open:
-
-http://localhost:8000
-
-## iPhone/iPad install
-
-To install on iPhone/iPad, the app needs to be hosted somewhere with HTTPS.
-
-Best easy hosting options:
-- GitHub Pages
-- Netlify
-- Vercel
-
-Then open the hosted URL in Safari:
-1. Tap Share.
-2. Tap Add to Home Screen.
-3. Open it like an app.
-
-## Next Step
-
-Deploy this PWA online so you can install it on your iPhone/iPad.
+If your phone still shows the old version, refresh the page once or remove/re-add the Home Screen app. The service worker cache version has been updated to `jakes-strength-v02`.
