@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090b10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Strength">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<title>Jake's Strength App</title>
+<style>
+:root{--bg:#090b10;--card:#151923;--card2:#1d2330;--text:#f4f7fb;--muted:#9ca9bc;--accent:#73e0a9;--accent2:#6aa7ff;--warn:#ffd166;--danger:#ff7d7d;--border:#2a3242}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#090b10,#111723);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}.app{max-width:520px;margin:0 auto;min-height:100vh;padding:16px 14px 88px}.hero{padding:18px;border-radius:26px;background:linear-gradient(135deg,#1a2333,#10141d);border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.25)}.kicker{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}h1{font-size:31px;line-height:1;margin:10px 0 8px}.sub,.small{color:var(--muted);font-size:14px;line-height:1.45}.progress{height:10px;border-radius:99px;background:#2b3342;overflow:hidden;margin:16px 0 7px}.progress>div{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.card{background:rgba(21,25,35,.94);border:1px solid var(--border);border-radius:22px;padding:16px;margin:12px 0}.row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}h2{margin:0 0 5px;font-size:22px}.badge{background:#263145;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900;white-space:nowrap}.section-title{margin:18px 0 8px;color:var(--accent);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.exercise{padding:13px 0;border-top:1px solid var(--border)}.exercise:first-child{border-top:0}.ex-name{font-weight:900;margin-bottom:6px}.ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;color:var(--muted);font-size:13px}.note{color:var(--muted);font-size:13px;margin-top:6px}.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}button{font:inherit}.primary,.secondary,.danger{border:0;border-radius:16px;padding:13px 10px;font-weight:900}.primary{background:var(--accent);color:#08100c}.secondary{background:var(--card2);color:var(--text);border:1px solid var(--border)}.danger{background:#3a2027;color:#ffb3b3;border:1px solid #5c2d38;width:100%;margin-top:10px}.status{display:inline-block;margin-top:8px;padding:6px 9px;border-radius:999px;font-size:12px;font-weight:900}.done{background:#143728;color:var(--accent)}.skipped{background:#3d3420;color:var(--warn)}.next{background:#263145;color:var(--accent2)}.day-chip{width:100%;text-align:left;margin:7px 0;border:1px solid var(--border);background:var(--card2);color:var(--text);border-radius:16px;padding:13px}.day-chip strong{display:block}.day-chip span{color:var(--muted);font-size:13px}.bottom-nav{position:fixed;left:50%;transform:translateX(-50%);bottom:12px;width:min(488px,calc(100% - 24px));display:grid;grid-template-columns:repeat(4,1fr);gap:8px;background:rgba(9,11,16,.86);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:22px;padding:8px}.bottom-nav button{background:transparent;border:0;color:var(--muted);font-size:12px;font-weight:900;padding:10px 4px;border-radius:14px}.bottom-nav button.active{background:var(--card2);color:var(--accent)}.hidden{display:none}ul{margin:8px 0 0 18px;padding:0;color:var(--muted);line-height:1.6}.pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:7px 10px;color:var(--muted);font-size:12px;margin:4px 4px 0 0}.install{border:1px dashed var(--border);background:#111723}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="hero">
+    <div class="kicker">Starts Monday, July 6, 2026</div>
+    <h1>Jake's Strength App</h1>
+    <div class="sub">Installable PWA with offline support, saved progress, and skip/push-back scheduling.</div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div class="meta"><span id="workoutLabel"></span><span id="phaseLabel"></span></div>
+  </div>
+
+  <div id="todayView">
+    <div class="card">
+      <div class="row"><div><h2 id="todayTitle"></h2><div class="small" id="todaySub"></div><div class="small" id="scheduledDate"></div><div id="statusPill"></div></div><div class="badge" id="duration"></div></div>
+      <div class="action-grid"><button class="primary" onclick="completeWorkout()">Complete</button><button class="secondary" onclick="skipWorkout()">Skip / Push Back</button></div>
+      <div class="action-grid"><button class="secondary" onclick="previousWorkout()">Previous</button><button class="secondary" onclick="nextWorkout()">Next</button></div>
+    </div>
+    <div class="card"><div class="section-title">Phase Note</div><div class="small" id="phaseNote"></div></div>
+    <div class="card"><div class="section-title">Lift</div><div id="exerciseList"></div><div id="coreBlock"></div><div class="section-title">Cardio / Finisher</div><div class="small" id="cardioText"></div></div>
+  </div>
+
+  <div id="weekView" class="hidden"><div class="card"><h2>Upcoming Workouts</h2><div class="small">This list automatically moves when you complete or skip workouts.</div><div class="section-title">Next 10</div><div id="upcomingList"></div></div></div>
+
+  <div id="programView" class="hidden">
+    <div class="card"><h2>Program Overview</h2><div class="small">12 weeks, 5 days per week, about 60 minutes each. Built for muscle, strength, cardio, and abs without back squats.</div><div class="section-title">Split</div><span class="pill">Mon Legs</span><span class="pill">Tue Push</span><span class="pill">Wed Pull</span><span class="pill">Thu Upper</span><span class="pill">Fri Lower + Conditioning</span></div>
+    <div class="card"><h2>Phases</h2><ul><li>Weeks 1–4: Foundation</li><li>Weeks 5–8: Intensity</li><li>Weeks 9–11: Peak</li><li>Week 12: Deload + Test</li></ul></div>
+    <div class="card install"><h2>Install on iPhone/iPad</h2><div class="small">Open this app in Safari, tap Share, then choose <b>Add to Home Screen</b>. On Windows, open in Chrome/Edge and use the install icon in the address bar.</div></div>
+  </div>
+
+  <div id="settingsView" class="hidden">
+    <div class="card"><h2>Settings</h2><div class="small" id="settingsText"></div><button class="danger" onclick="resetProgress()">Reset Progress</button></div>
+    <div class="card"><h2>Future Integrations</h2><ul><li>Apple Health requires native iOS later.</li><li>Oura can be added through API/OAuth later.</li><li>For now, recovery can be added manually inside the PWA.</li></ul></div>
+  </div>
+</div>
+<div class="bottom-nav"><button class="active" onclick="showView('todayView',this)">Today</button><button onclick="showView('weekView',this)">Week</button><button onclick="showView('programView',this)">Program</button><button onclick="showView('settingsView',this)">Settings</button></div>
+
+<script>
+let PROGRAM=null;
+const KEY="jakes_strength_pwa_progress_v1";
+let state=JSON.parse(localStorage.getItem(KEY)||"null")||{currentIndex:0,completed:[],skipped:[],dateShift:0};
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function startDate(){return new Date(PROGRAM.start_date+"T06:00:00")}
+function addTrainingDays(start,n){let d=new Date(start);let added=0;while(added<n){d.setDate(d.getDate()+1);let day=d.getDay();if(day>=1&&day<=5)added++}return d}
+function current(){return PROGRAM.workouts[Math.min(state.currentIndex,PROGRAM.workouts.length-1)]}
+function scheduledDateFor(i){return addTrainingDays(startDate(),i+state.dateShift).toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric",year:"numeric"})}
+function statusFor(w){if(state.completed.includes(w.id))return '<span class="status done">Completed</span>'; if(state.skipped.find(s=>s.id===w.id))return '<span class="status skipped">Skipped before — pushed back</span>'; if(w.sequence===state.currentIndex)return '<span class="status next">Next workout</span>'; return ''}
+function completeWorkout(){let w=current();if(!state.completed.includes(w.id))state.completed.push(w.id);if(state.currentIndex<PROGRAM.workouts.length-1)state.currentIndex++;save();render()}
+function skipWorkout(){let w=current();state.skipped.push({id:w.id,date:new Date().toISOString()});state.dateShift++;save();render()}
+function nextWorkout(){if(state.currentIndex<PROGRAM.workouts.length-1)state.currentIndex++;save();render()}
+function previousWorkout(){if(state.currentIndex>0)state.currentIndex--;save();render()}
+function jumpTo(i){state.currentIndex=i;save();showView('todayView',document.querySelectorAll('.bottom-nav button')[0])}
+function resetProgress(){state={currentIndex:0,completed:[],skipped:[],dateShift:0};save();render()}
+function showView(id,btn){['todayView','weekView','programView','settingsView'].forEach(v=>document.getElementById(v).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.bottom-nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render()}
+function render(){if(!PROGRAM)return;let w=current();document.getElementById('workoutLabel').textContent=`Workout ${state.currentIndex+1} / ${PROGRAM.workouts.length}`;document.getElementById('phaseLabel').textContent=`Week ${w.week}: ${w.phase}`;document.getElementById('progressBar').style.width=`${((state.currentIndex+1)/PROGRAM.workouts.length)*100}%`;document.getElementById('todayTitle').textContent=`Week ${w.week} — ${w.focus}`;document.getElementById('todaySub').textContent=`${w.day_name} • ${w.weekly_goal}`;document.getElementById('scheduledDate').textContent=`Scheduled: ${scheduledDateFor(w.sequence)}`;document.getElementById('duration').textContent=`${w.duration_minutes} min`;document.getElementById('statusPill').innerHTML=statusFor(w);document.getElementById('phaseNote').textContent=w.phase_note;document.getElementById('exerciseList').innerHTML=w.exercises.map(e=>`<div class="exercise"><div class="ex-name">${e[0]}</div><div class="ex-grid"><div>Sets/Reps: <b>${e[1]}</b></div><div>Rest: <b>${e[2]}</b></div></div><div class="note">${e[3]}</div></div>`).join('');document.getElementById('coreBlock').innerHTML=w.core.length?`<div class="section-title">Abs / Core</div>`+w.core.map(c=>`<div class="exercise"><div class="ex-name">${c[0]}</div><div class="small">${c[1]}</div></div>`).join(''):"";document.getElementById('cardioText').textContent=w.cardio;document.getElementById('upcomingList').innerHTML=PROGRAM.workouts.slice(state.currentIndex,state.currentIndex+10).map(x=>`<button class="day-chip" onclick="jumpTo(${x.sequence})"><strong>${scheduledDateFor(x.sequence)} — W${x.week} ${x.focus}</strong><span>${x.duration_minutes} min • ${x.cardio}</span>${statusFor(x)}</button>`).join('');document.getElementById('settingsText').innerHTML=`Completed: <b>${state.completed.length}</b><br>Skipped/pushed days: <b>${state.dateShift}</b><br>Current workout: <b>${state.currentIndex+1}</b>`}
+fetch("./program.json").then(r=>r.json()).then(data=>{PROGRAM=data;render()});
+if("serviceWorker" in navigator){navigator.serviceWorker.register("./service-worker.js")}
+</script>
+</body>
+</html>
