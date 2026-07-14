@@ -1,7 +1,7 @@
 {
   "name": "Jake's Strength App",
   "short_name": "Strength",
-  "description": "Neutral black-and-white strength app with guided workout mode, progression suggestions, history, weekly reviews, and flexible settings.",
+  "description": "Private cloud-connected strength app with secure email sign-in, automatic sync, recovery coaching, and health-integration foundations.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",

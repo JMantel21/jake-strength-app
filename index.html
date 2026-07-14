@@ -135,14 +135,41 @@ body{background:linear-gradient(180deg,#000,#101010)}
 .progression-list{display:grid;gap:8px}.progression-item{border:1px solid var(--border);background:#111;border-radius:15px;padding:12px}
 .small-button{border:1px solid var(--border);background:#171717;color:#fff;border-radius:11px;padding:8px 10px;font-weight:800}
 
+
+.auth-overlay{position:fixed;inset:0;background:#000;z-index:50;display:flex;align-items:center;justify-content:center;padding:24px}
+.auth-shell{width:min(430px,100%);background:#0d0d0d;border:1px solid #2a2a2a;border-radius:24px;padding:22px}
+.auth-logo{width:54px;height:54px;border-radius:16px;background:#f5f5f5;color:#000;display:grid;place-items:center;font-weight:900;font-size:23px;margin-bottom:18px}
+.auth-status{margin-top:12px;padding:10px;border-radius:12px;background:#171717;color:#a3a3a3;font-size:12px}
+.cloud-pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);background:#111;border-radius:999px;padding:7px 10px;font-size:11px;color:var(--muted)}
+.cloud-dot{width:8px;height:8px;border-radius:50%;background:#777}.cloud-dot.synced{background:#fff}.cloud-dot.syncing{background:#aaa}.cloud-dot.offline{background:#555}
+.cloud-card{border:1px solid var(--border);background:#101010;border-radius:16px;padding:13px}
+.cloud-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.account-row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px 0;border-top:1px solid var(--border)}
+.account-row:first-child{border-top:0}
+.sync-log{font-size:11px;color:var(--muted);line-height:1.45}
+.hidden-force{display:none!important}
+
 </style>
 </head>
 <body>
+
+<div id="authOverlay" class="auth-overlay">
+  <div class="auth-shell">
+    <div class="auth-logo">JS</div>
+    <div class="kicker">PRIVATE ACCESS</div>
+    <h1 style="font-size:30px;margin:8px 0 6px">Jake’s Strength</h1>
+    <div class="small">Sign in with your email. Supabase will send you a secure magic link—no password required.</div>
+    <input class="input" id="authEmail" type="email" placeholder="you@example.com" autocomplete="email" style="margin-top:16px">
+    <button class="primary" style="width:100%;margin-top:10px" onclick="sendMagicLink()">Send Magic Link</button>
+    <div class="auth-status" id="authStatus">Use the same email each time so your cloud data stays attached to one private account.</div>
+  </div>
+</div>
+
 <div class="app">
   <div class="hero">
-    <div class="kicker">Version 0.7 • Progression + History</div>
+    <div class="kicker">Version 0.8 • Private Cloud Sync</div>
     <h1>Jake's Strength App</h1>
-    <div class="sub">A calmer black-and-white design with guided workouts, progression suggestions, detailed history, weekly reviews, and flexible settings.</div>
+    <div class="sub">Private email sign-in, automatic cloud backup, offline-first operation, and secure sync across devices.</div>
     <div class="progress"><div id="progressBar"></div></div>
     <div class="meta"><span id="workoutLabel"></span><span id="phaseLabel"></span></div>
   </div>
@@ -400,6 +427,33 @@ body{background:linear-gradient(180deg,#000,#101010)}
     </div>
   </div>
 
+
+  <div id="cloudView" class="hidden">
+    <div class="card">
+      <h2>Cloud & Account</h2>
+      <div class="cloud-card">
+        <div class="account-row"><div><b>Signed in as</b><div class="small" id="accountEmail">—</div></div><span class="badge">Private</span></div>
+        <div class="account-row"><div><b>Cloud status</b><div class="small" id="accountCloudStatus">Checking…</div></div><span class="cloud-dot" id="accountCloudDot"></span></div>
+        <div class="account-row"><div><b>Last cloud sync</b><div class="small" id="lastCloudSync">Never</div></div></div>
+      </div>
+      <div class="cloud-actions">
+        <button class="primary" onclick="syncNow()">Sync Now</button>
+        <button class="secondary" onclick="restoreFromCloud()">Restore Cloud Copy</button>
+      </div>
+      <button class="secondary" style="width:100%;margin-top:8px" onclick="signOutUser()">Sign Out</button>
+    </div>
+    <div class="card">
+      <h2>How Sync Works</h2>
+      <div class="sync-log">
+        Changes save immediately on this device. When online, the app uploads one encrypted-session-protected JSON snapshot to your private Supabase row. If you open the app on another device, it downloads the newest cloud copy after sign-in.
+      </div>
+    </div>
+    <div class="card">
+      <h2>Integration Foundation</h2>
+      <div class="small">The secure tables for Oura and Apple Health bridge data are ready. OAuth and health imports will be added in the next integration step.</div>
+    </div>
+  </div>
+
   <div id="backupView" class="hidden">
     <div class="card">
       <h2>Backup & Restore</h2>
@@ -513,6 +567,7 @@ body{background:linear-gradient(180deg,#000,#101010)}
 <button class="secondary" style="width:100%;margin-top:8px" onclick="openMoreView('progressView')">Progress</button>
     <button class="secondary" style="width:100%;margin-top:8px" onclick="openMoreView('recordsView')">Records & Calendar</button>
     <button class="secondary" style="width:100%;margin-top:8px" onclick="openMoreView('weekView')">Upcoming Week</button>
+<button class="secondary" style="width:100%;margin-top:8px" onclick="openMoreView('cloudView')">Cloud & Account</button>
 <button class="secondary" style="width:100%;margin-top:8px" onclick="openMoreView('backupView')">Backup & Restore</button>
 <button class="secondary" style="width:100%;margin-top:8px" onclick="openMoreView('appSettingsView')">App Settings</button>
     <button class="secondary" style="width:100%;margin-top:8px" onclick="closeMoreMenu()">Close</button>
@@ -520,13 +575,14 @@ body{background:linear-gradient(180deg,#000,#101010)}
 </div>
 
 <div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 let PROGRAM=null;
 const KEY="jakes_strength_pwa_progress_v02";
-let state=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem(OLD_KEY)||"null")||{currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{},nutritionGoals:{calories:2700,protein:175,water:96},nutritionByDate:{},recoveryByDate:{},exerciseNotes:{},exerciseSwaps:{},backupMeta:{},appSettings:{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true},guidedIndex:0};
-state.nutritionGoals=state.nutritionGoals||{calories:2700,protein:175,water:96};state.recoveryByDate=state.recoveryByDate||{};state.exerciseNotes=state.exerciseNotes||{};state.exerciseSwaps=state.exerciseSwaps||{};state.backupMeta=state.backupMeta||{};state.appSettings=state.appSettings||{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true};state.guidedIndex=state.guidedIndex||0;localStorage.setItem(KEY,JSON.stringify(state));state.nutritionByDate=state.nutritionByDate||{};
+let state=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem(OLD_KEY)||"null")||{currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{},nutritionGoals:{calories:2700,protein:175,water:96},nutritionByDate:{},recoveryByDate:{},exerciseNotes:{},exerciseSwaps:{},backupMeta:{},appSettings:{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true},guidedIndex:0,cloudMeta:{lastSync:null,lastLocalChange:null}};
+state.nutritionGoals=state.nutritionGoals||{calories:2700,protein:175,water:96};state.recoveryByDate=state.recoveryByDate||{};state.exerciseNotes=state.exerciseNotes||{};state.exerciseSwaps=state.exerciseSwaps||{};state.backupMeta=state.backupMeta||{};state.appSettings=state.appSettings||{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true};state.guidedIndex=state.guidedIndex||0;state.cloudMeta=state.cloudMeta||{lastSync:null,lastLocalChange:null};localStorage.setItem(KEY,JSON.stringify(state));state.nutritionByDate=state.nutritionByDate||{};
 let timerSeconds=120, timerRemaining=120, timerInterval=null;
-function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function saveLocal(){localStorage.setItem(KEY,JSON.stringify(state))}
 function toast(msg){let t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1800)}
 function startDate(){let d=(state.appSettings||{}).startDate||PROGRAM.start_date;return new Date(d+"T06:00:00")}
 function addTrainingDays(start,n){let d=new Date(start);let added=0;while(added<n){d.setDate(d.getDate()+1);let day=d.getDay();if(day>=1&&day<=5)added++}return d}
@@ -539,9 +595,9 @@ function toggleItem(id){let w=current();state.exerciseChecks[w.id]=checkedMap(w)
 function saveNotes(){let w=current();state.notes[w.id]=document.getElementById("workoutNotes").value;save()}
 function completeWorkout(){let w=current();if(!state.completed.includes(w.id))state.completed.push(w.id);state.streak=(state.streak||0)+1;state.lastCompleteDate=new Date().toISOString();state.completedDates=state.completedDates||{};state.completedDates[w.id]=state.lastCompleteDate;if(state.currentIndex<PROGRAM.workouts.length-1)state.currentIndex++;save();toast("Workout complete");render()}
 function skipWorkout(){let w=current();state.skipped.push({id:w.id,date:new Date().toISOString()});state.dateShift++;save();toast("Workout pushed back");render()}
-function resetProgress(){state={currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{},nutritionGoals:{calories:2700,protein:175,water:96},nutritionByDate:{},recoveryByDate:{},exerciseNotes:{},exerciseSwaps:{},backupMeta:{},appSettings:{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true},guidedIndex:0};save();render();toast("Progress reset")}
+function resetProgress(){state={currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{},nutritionGoals:{calories:2700,protein:175,water:96},nutritionByDate:{},recoveryByDate:{},exerciseNotes:{},exerciseSwaps:{},backupMeta:{},appSettings:{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true},guidedIndex:0,cloudMeta:{lastSync:null,lastLocalChange:null}};save();render();toast("Progress reset")}
 function jumpTo(i){state.currentIndex=i;save();showView('todayView',document.querySelectorAll('.bottom-nav button')[0])}
-function showView(id,btn){['todayView','dashboardView','recoveryView','nutritionView','historyView','reviewView','appSettingsView','backupView','progressView','recordsView','weekView','settingsView'].forEach(v=>document.getElementById(v).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.bottom-nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render()}
+function showView(id,btn){['todayView','dashboardView','recoveryView','nutritionView','historyView','reviewView','appSettingsView','cloudView','backupView','progressView','recordsView','weekView','settingsView'].forEach(v=>document.getElementById(v).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.bottom-nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render()}
 function setTimer(sec){timerSeconds=sec;timerRemaining=sec;stopTimer();renderTimer()}
 function renderTimer(){let m=Math.floor(timerRemaining/60).toString().padStart(2,"0");let s=(timerRemaining%60).toString().padStart(2,"0");document.getElementById("timerText").textContent=`${m}:${s}`}
 function stopTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null}document.getElementById("timerToggle").textContent="Start"}
@@ -899,6 +955,147 @@ function resetCategory(type){
   save();render();toast("Category reset");
 }
 
+
+const SUPABASE_URL="https://gzjowieqgzebrgupjgtn.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_XXGFp9SminI8S8Rz6EmVsw_bi6l5tQK";
+const supabaseClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,{
+  auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}
+});
+let currentUser=null;
+let cloudSyncTimer=null;
+let syncInProgress=false;
+let initialCloudLoadComplete=false;
+
+function setCloudStatus(status,label){
+  let dot=document.getElementById("cloudDot"),aDot=document.getElementById("accountCloudDot");
+  [dot,aDot].forEach(el=>{if(el)el.className=`cloud-dot ${status}`});
+  let main=document.getElementById("cloudStatus"),acct=document.getElementById("accountCloudStatus");
+  if(main)main.textContent=label;
+  if(acct)acct.textContent=label;
+}
+
+function save(){
+  state.cloudMeta=state.cloudMeta||{};
+  state.cloudMeta.lastLocalChange=new Date().toISOString();
+  saveLocal();
+  scheduleCloudSync();
+}
+
+function scheduleCloudSync(){
+  if(!currentUser||!navigator.onLine||!initialCloudLoadComplete)return;
+  clearTimeout(cloudSyncTimer);
+  setCloudStatus("syncing","Saving");
+  cloudSyncTimer=setTimeout(()=>pushStateToCloud(false),900);
+}
+
+async function sendMagicLink(){
+  let email=document.getElementById("authEmail").value.trim();
+  let status=document.getElementById("authStatus");
+  if(!email){status.textContent="Enter your email address first.";return}
+  status.textContent="Sending secure sign-in link…";
+  let redirectTo="https://jmantel21.github.io/jake-strength-app/";
+  const {error}=await supabaseClient.auth.signInWithOtp({email,options:{emailRedirectTo:redirectTo}});
+  status.textContent=error?`Could not send link: ${error.message}`:"Check your email and open the magic link on this device.";
+}
+
+async function initializeAuth(){
+  setCloudStatus("syncing","Connecting");
+  const {data:{session}}=await supabaseClient.auth.getSession();
+  await handleSession(session);
+  supabaseClient.auth.onAuthStateChange(async (_event,session)=>{await handleSession(session)});
+}
+
+async function handleSession(session){
+  currentUser=session?.user||null;
+  if(!currentUser){
+    document.getElementById("authOverlay").classList.remove("hidden-force");
+    setCloudStatus("offline","Signed out");
+    initialCloudLoadComplete=false;
+    return;
+  }
+  document.getElementById("authOverlay").classList.add("hidden-force");
+  document.getElementById("accountEmail").textContent=currentUser.email||"Signed in";
+  await loadCloudStateOnLogin();
+}
+
+async function loadCloudStateOnLogin(){
+  setCloudStatus("syncing","Loading cloud");
+  const {data,error}=await supabaseClient.from("app_state").select("state,updated_at,app_version").eq("user_id",currentUser.id).maybeSingle();
+  if(error){setCloudStatus("offline","Cloud error");toast("Cloud load failed");initialCloudLoadComplete=true;return}
+  if(!data){
+    initialCloudLoadComplete=true;
+    await pushStateToCloud(true);
+    return;
+  }
+  let cloudState=data.state||{};
+  let localChanged=state.cloudMeta?.lastLocalChange?new Date(state.cloudMeta.lastLocalChange).getTime():0;
+  let cloudChanged=data.updated_at?new Date(data.updated_at).getTime():0;
+  if(cloudChanged>localChanged){
+    state={...state,...cloudState};
+    state.cloudMeta=state.cloudMeta||{};
+    state.cloudMeta.lastSync=data.updated_at;
+    saveLocal();
+    render();
+    toast("Cloud data restored");
+  }else{
+    await pushStateToCloud(true);
+  }
+  initialCloudLoadComplete=true;
+  setCloudStatus("synced","Synced");
+  renderCloudAccount();
+}
+
+async function pushStateToCloud(force=false){
+  if(!currentUser||!navigator.onLine||syncInProgress)return;
+  syncInProgress=true;setCloudStatus("syncing","Saving");
+  let payload=JSON.parse(JSON.stringify(state));
+  const {error}=await supabaseClient.from("app_state").upsert({
+    user_id:currentUser.id,
+    state:payload,
+    app_version:"0.8"
+  },{onConflict:"user_id"});
+  syncInProgress=false;
+  if(error){setCloudStatus("offline","Save failed");return}
+  state.cloudMeta=state.cloudMeta||{};
+  state.cloudMeta.lastSync=new Date().toISOString();
+  saveLocal();
+  setCloudStatus("synced","Synced");
+  renderCloudAccount();
+  if(force)toast("Cloud sync complete");
+}
+
+async function syncNow(){await pushStateToCloud(true)}
+
+async function restoreFromCloud(){
+  if(!currentUser)return;
+  setCloudStatus("syncing","Restoring");
+  const {data,error}=await supabaseClient.from("app_state").select("state,updated_at").eq("user_id",currentUser.id).single();
+  if(error||!data){setCloudStatus("offline","Restore failed");toast("No cloud copy found");return}
+  state={...state,...data.state};
+  state.cloudMeta=state.cloudMeta||{};
+  state.cloudMeta.lastSync=data.updated_at;
+  saveLocal();render();setCloudStatus("synced","Synced");toast("Cloud copy restored");
+}
+
+async function signOutUser(){
+  await pushStateToCloud(false);
+  await supabaseClient.auth.signOut();
+  currentUser=null;
+  document.getElementById("authOverlay").classList.remove("hidden-force");
+  setCloudStatus("offline","Signed out");
+}
+
+function renderCloudAccount(){
+  let email=document.getElementById("accountEmail");
+  if(email)email.textContent=currentUser?.email||"Not signed in";
+  let last=document.getElementById("lastCloudSync");
+  if(last)last.textContent=state.cloudMeta?.lastSync?new Date(state.cloudMeta.lastSync).toLocaleString():"Never";
+}
+
+window.addEventListener("online",()=>{setCloudStatus("syncing","Reconnecting");scheduleCloudSync()});
+window.addEventListener("offline",()=>setCloudStatus("offline","Offline"));
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden")pushStateToCloud(false)});
+
 function render(){if(!PROGRAM)return;let w=current();let items=allItems(w);let checks=checkedMap(w);let done=items.filter((x,idx)=>checks[`${x.kind}-${x.i}`]).length;let pct=items.length?Math.round(done/items.length*100):0;document.getElementById('workoutLabel').textContent=`Workout ${state.currentIndex+1} / ${PROGRAM.workouts.length}`;document.getElementById('phaseLabel').textContent=`Week ${w.week}: ${w.phase}`;document.getElementById('progressBar').style.width=`${((state.currentIndex+1)/PROGRAM.workouts.length)*100}%`;document.getElementById('todayTitle').textContent=`Week ${w.week} — ${w.focus}`;document.getElementById('todaySub').textContent=`${w.day_name} • ${w.weekly_goal}`;document.getElementById('scheduledDate').textContent=`Scheduled: ${scheduledDateFor(w.sequence)}`;document.getElementById('duration').textContent=`${w.duration_minutes} min`;document.getElementById('statusPill').innerHTML=statusFor(w);document.getElementById('phaseNote').textContent=w.phase_note;document.getElementById('exerciseDoneCount').textContent=`${done}/${items.length}`;document.getElementById('streakCount').textContent=state.streak||0;document.getElementById('completePct').textContent=`${pct}%`;document.getElementById('exerciseList').innerHTML=w.exercises.map((e,i)=>{let id=`exercise-${i}`, on=checks[id];return `<div class="exercise ${on?'ex-done':''}"><div class="checkrow"><button class="checkbox" onclick="toggleItem('${id}')">${on?'✓':''}</button><div><div class="ex-name">${e[0]}</div><div class="ex-grid"><div>Sets/Reps: <b>${e[1]}</b></div><div>Rest: <b>${e[2]}</b></div></div><div class="note">${e[3]}</div></div></div></div>`}).join('');document.getElementById('coreBlock').innerHTML=((state.appSettings||{}).showCore!==false&&w.core.length)?`<div class="section-title">Abs / Core</div>`+w.core.map((c,i)=>{let id=`core-${i}`,on=checks[id];return `<div class="exercise ${on?'ex-done':''}"><div class="checkrow"><button class="checkbox" onclick="toggleItem('${id}')">${on?'✓':''}</button><div><div class="ex-name">${c[0]}</div><div class="small">${c[1]}</div></div></div></div>`}).join(''):"";document.getElementById('cardioText').textContent=(state.appSettings||{}).showCardio===false?'Hidden in settings':w.cardio;document.getElementById("workoutNotes").value=state.notes[w.id]||"";document.getElementById('upcomingList').innerHTML=PROGRAM.workouts.slice(state.currentIndex,state.currentIndex+10).map(x=>`<button class="day-chip" onclick="jumpTo(${x.sequence})"><strong>${scheduledDateFor(x.sequence)} — W${x.week} ${x.focus}</strong><span>${x.duration_minutes} min • ${x.cardio}</span>${statusFor(x)}</button>`).join('');document.getElementById('settingsText').innerHTML=`Completed: <b>${state.completed.length}</b><br>Skipped/pushed days: <b>${state.dateShift}</b><br>Current workout: <b>${state.currentIndex+1}</b><br>Saved notes: <b>${Object.keys(state.notes||{}).length}</b>`;document.getElementById("dashToday").innerHTML=`Today is <b>${w.focus}</b>, scheduled for ${scheduledDateFor(w.sequence)}. Estimated time: ${w.duration_minutes} minutes.`;document.getElementById("dashCompleted").textContent=state.completed.length;document.getElementById("dashSkipped").textContent=state.dateShift;document.getElementById("dashWeek").textContent=w.week;document.getElementById("coachNote").textContent=pct<50?"Start with the main lift and keep 1–2 reps in reserve. Your goal is effort plus clean form.":pct<100?"Good momentum. Finish the accessories, then hit the cardio/finisher.":"Workout checklist is complete. Add notes, then tap Complete Workout.";
 let ms=[];if(state.completed.length>=5)ms.push("Completed your first full week.");if((state.streak||0)>=3)ms.push(`${state.streak}-workout streak.`);if((state.weights||[]).length>=2)ms.push("Body-weight trend started.");if((state.prs||[]).length>=1)ms.push("First PR logged.");let ml=document.getElementById("milestoneList");if(ml)ml.innerHTML=ms.length?ms.map(m=>`<div class="list-row">✓ ${m}</div>`).join(""):"Your first milestones will appear as you train and log progress.";
 let mlist=document.getElementById("measurementList");if(mlist)mlist.innerHTML=(state.measurements||[]).slice().reverse().map(m=>`<div class="list-row"><b>${m.date}</b><div class="small">Chest: ${m.chest??"—"} • Waist: ${m.waist??"—"} • Arm: ${m.arm??"—"}</div></div>`).join("");
@@ -910,7 +1107,7 @@ if(recoveryToday){
   document.getElementById("coachNote").textContent=`Readiness ${recoveryToday.score}/100 (${rs.label}). `+document.getElementById("trainingRecommendation").textContent;
 }
 
-renderWeight();renderCalendar();renderPhotos();renderNutrition();renderRecovery();renderBackup();renderHistory();renderWeeklyReview();renderSettings();renderTimer()}
+renderWeight();renderCalendar();renderPhotos();renderNutrition();renderRecovery();renderBackup();renderHistory();renderWeeklyReview();renderSettings();renderCloudAccount();renderTimer()}
 fetch("./program.json").then(r=>r.json()).then(data=>{PROGRAM=data;let today=new Date().toISOString().slice(0,10);document.getElementById("weightDate").value=today;document.getElementById("measurementDate").value=today;render()});
 if("serviceWorker" in navigator){navigator.serviceWorker.register("./service-worker.js")}
 </script>

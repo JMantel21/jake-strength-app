@@ -1,69 +1,53 @@
-# Jake's Strength App — Version 0.7
+# Jake's Strength App — Version 0.8
 
-## New neutral design
-The app now uses a black, white, and gray palette throughout:
-- Black backgrounds
-- White primary actions
-- Gray cards, charts, indicators, and status states
-- Reduced visual noise and no bright accent colors
+## New in Version 0.8
+- Private Supabase email sign-in
+- Passwordless magic-link authentication
+- Automatic cloud backup
+- Local-first/offline operation
+- Debounced automatic synchronization after changes
+- Cloud restore
+- Cross-device sign-in foundation
+- Version 0.7 local-data migration
+- Cloud & Account screen
+- Connection and sync-status indicators
+- Oura and Apple Health bridge database foundation
 
-## New guided workout mode
-- Start Workout button
-- One exercise at a time
-- Exercise progress bar
-- Prescription, rest time, and form note
-- Saved exercise note field
-- Automatic progression suggestion
-- Complete & Next flow
-- Final exercise completes the workout
+## Supabase project
+This build is configured for:
+- Project URL: https://gzjowieqgzebrgupjgtn.supabase.co
+- GitHub Pages redirect: https://jmantel21.github.io/jake-strength-app/
 
-## Smarter progression
-- Uses your saved PR history
-- Responds to current readiness
-- Suggests adding a rep, adding weight, repeating load, or reducing load
-- Current-workout progression list in History
+Only the browser-safe Supabase publishable key is included. Never add a service-role key to this repository.
 
-## Workout history
-- Completed workouts by date
-- Readiness score from that day
-- Protein consumed that day
-- Exercise-note count
-- Exercise swaps
-- Workout notes
+## Required Supabase setup
+Run `jake_strength_supabase_setup.sql` before deploying this version.
 
-## Weekly review
-- Workouts completed in the last seven days
-- Average readiness
-- Protein-target consistency
-- Weight change when available
-- Weekly grade
-- Suggested focus for the next week
+Authentication URL Configuration should include:
+- Site URL: https://jmantel21.github.io/jake-strength-app/
+- Redirect URL: https://jmantel21.github.io/jake-strength-app/
+- Optional local redirect: http://localhost:8000/
 
-## Settings
-- Change program start date
-- Pounds/inches or kilograms/centimeters
-- Default rest timer
-- Show or hide cardio
-- Show or hide core
-- Reset individual data categories
+## First sign-in
+1. Deploy Version 0.8.
+2. Open the live GitHub Pages app.
+3. Enter your email.
+4. Open the Supabase magic-link email on the same iPhone.
+5. The app imports existing Version 0.7 local data and creates your private cloud row.
 
-## Navigation
-New options are under More:
-- History & Progression
-- Weekly Review
-- App Settings
-- Existing Progress, Records, Week, and Backup screens
-
-## Migration
-Version 0.7 imports Version 0.6 local data when available.
+## How sync works
+- Every change saves locally immediately.
+- Cloud upload follows automatically when online.
+- Opening the app on another device restores the newest cloud copy after sign-in.
+- Manual Sync Now and Restore Cloud Copy controls are available under More -> Cloud & Account.
 
 ## Deployment
-Replace the current GitHub Pages files with this folder's contents, commit, and push.
+Replace the repository files with this folder's contents, commit, and push.
 
-Service-worker cache: `jakes-strength-v07`
+Service-worker cache: `jakes-strength-v08`
 
-After deployment:
-1. Open the website in Safari.
+After GitHub Pages deploys:
+1. Open the site in Safari.
 2. Refresh once.
-3. Fully close the Home Screen app.
+3. Close the Home Screen app fully.
 4. Reopen it.
