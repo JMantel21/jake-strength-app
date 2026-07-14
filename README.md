@@ -1,31 +1,19 @@
-# Jake's Strength App — Version 0.2
+# Jake's Strength App — Version 0.3
 
-This is the first feature upgrade after the initial deployed PWA.
+## New features
+- Body-weight logging and trend chart
+- Chest, waist, and arm measurements
+- Front and side progress-photo slots
+- Personal-record tracking
+- Completed/skipped workout calendar
+- Dashboard milestones
 
-## New in v0.2
+All Version 0.2 features remain.
 
-- Dashboard tab
-- Today's workout progress card
-- Exercise checkboxes
-- Core exercise checkboxes
-- Rest timer with 1:00, 1:30, and 2:00 presets
-- Workout notes
-- Workout completion streak
-- Completion percentage
-- Coach note on dashboard
-- Improved local progress storage
-- Existing complete workout and skip/push-back logic retained
+## Deploy
+Replace the files in your GitHub Pages repository with this folder's contents, commit, and push.
 
-## Deployment
+The service-worker cache is `jakes-strength-v03`.
 
-Replace the files in your GitHub Pages repo with the contents of this folder, then commit and push.
-
-Important files:
-- index.html
-- program.json
-- manifest.webmanifest
-- service-worker.js
-- assets/icon-192.png
-- assets/icon-512.png
-
-If your phone still shows the old version, refresh the page once or remove/re-add the Home Screen app. The service worker cache version has been updated to `jakes-strength-v02`.
+## Storage note
+Progress data and photos are stored locally on the current device/browser. Clearing site data may remove them.

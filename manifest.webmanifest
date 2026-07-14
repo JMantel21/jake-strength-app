@@ -1,7 +1,7 @@
 {
   "name": "Jake's Strength App",
   "short_name": "Strength",
-  "description": "12-week strength app with workout dashboard, rest timer, exercise checklists, and skip scheduling.",
+  "description": "12-week strength app with progress tracking, measurements, photos, PRs, and workout calendar.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#090b10",

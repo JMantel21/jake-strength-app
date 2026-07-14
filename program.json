@@ -1,6 +1,6 @@
 {
   "name": "Jake's Strength App",
-  "version": "0.2",
+  "version": "0.3",
   "start_date": "2026-07-06",
   "skip_policy": "push_back_queue",
   "workouts": [
