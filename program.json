@@ -1,7 +1,7 @@
 {
   "name": "Jake's Strength App",
-  "version": "0.3",
-  "start_date": "2026-07-06",
+  "version": "0.7",
+  "start_date": "2026-07-20",
   "skip_policy": "push_back_queue",
   "workouts": [
     {
@@ -3568,5 +3568,82 @@
       "core": [],
       "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
     }
-  ]
+  ],
+  "exercise_substitutions": {
+    "Hack Squat or Leg Press": [
+      "Belt Squat",
+      "Smith Machine Squat",
+      "Goblet Squat",
+      "Dumbbell Split Squat"
+    ],
+    "Romanian Deadlift": [
+      "Dumbbell RDL",
+      "Smith Machine RDL",
+      "Hip Thrust",
+      "Back Extension"
+    ],
+    "Bulgarian Split Squat": [
+      "Reverse Lunge",
+      "Walking Lunge",
+      "Step-Up",
+      "Split Squat"
+    ],
+    "Incline Dumbbell Press": [
+      "Incline Smith Press",
+      "Incline Machine Press",
+      "Incline Barbell Press"
+    ],
+    "Flat Dumbbell Press": [
+      "Machine Chest Press",
+      "Push-Up",
+      "Bench Press"
+    ],
+    "Seated Dumbbell Shoulder Press": [
+      "Machine Shoulder Press",
+      "Arnold Press",
+      "Landmine Press"
+    ],
+    "Pull-Ups or Lat Pulldown": [
+      "Assisted Pull-Up",
+      "Neutral-Grip Pulldown",
+      "Single-Arm Pulldown"
+    ],
+    "Chest-Supported Row": [
+      "Machine Row",
+      "Cable Row",
+      "Dumbbell Row"
+    ],
+    "Single-Arm Dumbbell Row": [
+      "Single-Arm Cable Row",
+      "Machine Row",
+      "Chest-Supported Row"
+    ],
+    "Trap Bar Deadlift": [
+      "Dumbbell Deadlift",
+      "Rack Pull",
+      "Hip Thrust",
+      "Leg Press"
+    ],
+    "Front Squat, Goblet Squat, or Hack Squat": [
+      "Goblet Squat",
+      "Hack Squat",
+      "Leg Press",
+      "Smith Machine Front Squat"
+    ],
+    "Walking Lunges": [
+      "Reverse Lunges",
+      "Step-Ups",
+      "Bulgarian Split Squats"
+    ],
+    "Skull Crusher": [
+      "Cable Triceps Extension",
+      "Overhead Rope Extension",
+      "Close-Grip Push-Up"
+    ],
+    "EZ Bar Curl": [
+      "Dumbbell Curl",
+      "Cable Curl",
+      "Preacher Curl"
+    ]
+  }
 }

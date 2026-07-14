@@ -1,11 +1,11 @@
 {
   "name": "Jake's Strength App",
   "short_name": "Strength",
-  "description": "12-week strength app with progress tracking, measurements, photos, PRs, and workout calendar.",
+  "description": "Neutral black-and-white strength app with guided workout mode, progression suggestions, history, weekly reviews, and flexible settings.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#090b10",
-  "theme_color": "#090b10",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [
     {
