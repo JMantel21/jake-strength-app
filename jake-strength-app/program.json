@@ -1,0 +1,3572 @@
+{
+  "name": "Jake's Strength App",
+  "version": "0.3",
+  "start_date": "2026-07-06",
+  "skip_policy": "push_back_queue",
+  "workouts": [
+    {
+      "id": "W01D1",
+      "sequence": 0,
+      "week": 1,
+      "phase": "Foundation",
+      "weekly_goal": "Learn the movements and establish starting weights.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W01D2",
+      "sequence": 1,
+      "week": 1,
+      "phase": "Foundation",
+      "weekly_goal": "Learn the movements and establish starting weights.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W01D3",
+      "sequence": 2,
+      "week": 1,
+      "phase": "Foundation",
+      "weekly_goal": "Learn the movements and establish starting weights.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W01D4",
+      "sequence": 3,
+      "week": 1,
+      "phase": "Foundation",
+      "weekly_goal": "Learn the movements and establish starting weights.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W01D5",
+      "sequence": 4,
+      "week": 1,
+      "phase": "Foundation",
+      "weekly_goal": "Learn the movements and establish starting weights.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W02D1",
+      "sequence": 5,
+      "week": 2,
+      "phase": "Foundation",
+      "weekly_goal": "Add reps where possible while staying 1\u20132 reps from failure.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W02D2",
+      "sequence": 6,
+      "week": 2,
+      "phase": "Foundation",
+      "weekly_goal": "Add reps where possible while staying 1\u20132 reps from failure.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W02D3",
+      "sequence": 7,
+      "week": 2,
+      "phase": "Foundation",
+      "weekly_goal": "Add reps where possible while staying 1\u20132 reps from failure.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W02D4",
+      "sequence": 8,
+      "week": 2,
+      "phase": "Foundation",
+      "weekly_goal": "Add reps where possible while staying 1\u20132 reps from failure.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W02D5",
+      "sequence": 9,
+      "week": 2,
+      "phase": "Foundation",
+      "weekly_goal": "Add reps where possible while staying 1\u20132 reps from failure.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W03D1",
+      "sequence": 10,
+      "week": 3,
+      "phase": "Foundation",
+      "weekly_goal": "Increase load on lifts where you hit the top rep range.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W03D2",
+      "sequence": 11,
+      "week": 3,
+      "phase": "Foundation",
+      "weekly_goal": "Increase load on lifts where you hit the top rep range.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W03D3",
+      "sequence": 12,
+      "week": 3,
+      "phase": "Foundation",
+      "weekly_goal": "Increase load on lifts where you hit the top rep range.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W03D4",
+      "sequence": 13,
+      "week": 3,
+      "phase": "Foundation",
+      "weekly_goal": "Increase load on lifts where you hit the top rep range.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W03D5",
+      "sequence": 14,
+      "week": 3,
+      "phase": "Foundation",
+      "weekly_goal": "Increase load on lifts where you hit the top rep range.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W04D1",
+      "sequence": 15,
+      "week": 4,
+      "phase": "Foundation",
+      "weekly_goal": "Hardest foundation week; keep form clean.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W04D2",
+      "sequence": 16,
+      "week": 4,
+      "phase": "Foundation",
+      "weekly_goal": "Hardest foundation week; keep form clean.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W04D3",
+      "sequence": 17,
+      "week": 4,
+      "phase": "Foundation",
+      "weekly_goal": "Hardest foundation week; keep form clean.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W04D4",
+      "sequence": 18,
+      "week": 4,
+      "phase": "Foundation",
+      "weekly_goal": "Hardest foundation week; keep form clean.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W04D5",
+      "sequence": 19,
+      "week": 4,
+      "phase": "Foundation",
+      "weekly_goal": "Hardest foundation week; keep form clean.",
+      "phase_note": "Foundation block: controlled reps, consistent effort, establish starting weights.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W05D1",
+      "sequence": 20,
+      "week": 5,
+      "phase": "Intensity",
+      "weekly_goal": "Shift compounds heavier; main lifts move toward 5\u00d75\u20136.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W05D2",
+      "sequence": 21,
+      "week": 5,
+      "phase": "Intensity",
+      "weekly_goal": "Shift compounds heavier; main lifts move toward 5\u00d75\u20136.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W05D3",
+      "sequence": 22,
+      "week": 5,
+      "phase": "Intensity",
+      "weekly_goal": "Shift compounds heavier; main lifts move toward 5\u00d75\u20136.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W05D4",
+      "sequence": 23,
+      "week": 5,
+      "phase": "Intensity",
+      "weekly_goal": "Shift compounds heavier; main lifts move toward 5\u00d75\u20136.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W05D5",
+      "sequence": 24,
+      "week": 5,
+      "phase": "Intensity",
+      "weekly_goal": "Shift compounds heavier; main lifts move toward 5\u00d75\u20136.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W06D1",
+      "sequence": 25,
+      "week": 6,
+      "phase": "Intensity",
+      "weekly_goal": "Add drop sets on final isolation movements.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W06D2",
+      "sequence": 26,
+      "week": 6,
+      "phase": "Intensity",
+      "weekly_goal": "Add drop sets on final isolation movements.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W06D3",
+      "sequence": 27,
+      "week": 6,
+      "phase": "Intensity",
+      "weekly_goal": "Add drop sets on final isolation movements.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W06D4",
+      "sequence": 28,
+      "week": 6,
+      "phase": "Intensity",
+      "weekly_goal": "Add drop sets on final isolation movements.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W06D5",
+      "sequence": 29,
+      "week": 6,
+      "phase": "Intensity",
+      "weekly_goal": "Add drop sets on final isolation movements.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W07D1",
+      "sequence": 30,
+      "week": 7,
+      "phase": "Intensity",
+      "weekly_goal": "Push accessories close to failure.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W07D2",
+      "sequence": 31,
+      "week": 7,
+      "phase": "Intensity",
+      "weekly_goal": "Push accessories close to failure.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W07D3",
+      "sequence": 32,
+      "week": 7,
+      "phase": "Intensity",
+      "weekly_goal": "Push accessories close to failure.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W07D4",
+      "sequence": 33,
+      "week": 7,
+      "phase": "Intensity",
+      "weekly_goal": "Push accessories close to failure.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W07D5",
+      "sequence": 34,
+      "week": 7,
+      "phase": "Intensity",
+      "weekly_goal": "Push accessories close to failure.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W08D1",
+      "sequence": 35,
+      "week": 8,
+      "phase": "Intensity",
+      "weekly_goal": "Hardest volume week before peak phase.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W08D2",
+      "sequence": 36,
+      "week": 8,
+      "phase": "Intensity",
+      "weekly_goal": "Hardest volume week before peak phase.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W08D3",
+      "sequence": 37,
+      "week": 8,
+      "phase": "Intensity",
+      "weekly_goal": "Hardest volume week before peak phase.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W08D4",
+      "sequence": 38,
+      "week": 8,
+      "phase": "Intensity",
+      "weekly_goal": "Hardest volume week before peak phase.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W08D5",
+      "sequence": 39,
+      "week": 8,
+      "phase": "Intensity",
+      "weekly_goal": "Hardest volume week before peak phase.",
+      "phase_note": "Intensity block: first lift trends heavier, final isolation can include one drop set.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W09D1",
+      "sequence": 40,
+      "week": 9,
+      "phase": "Peak",
+      "weekly_goal": "Strength focus; main lifts move toward 5\u00d73\u20135.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W09D2",
+      "sequence": 41,
+      "week": 9,
+      "phase": "Peak",
+      "weekly_goal": "Strength focus; main lifts move toward 5\u00d73\u20135.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W09D3",
+      "sequence": 42,
+      "week": 9,
+      "phase": "Peak",
+      "weekly_goal": "Strength focus; main lifts move toward 5\u00d73\u20135.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W09D4",
+      "sequence": 43,
+      "week": 9,
+      "phase": "Peak",
+      "weekly_goal": "Strength focus; main lifts move toward 5\u00d73\u20135.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W09D5",
+      "sequence": 44,
+      "week": 9,
+      "phase": "Peak",
+      "weekly_goal": "Strength focus; main lifts move toward 5\u00d73\u20135.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W10D1",
+      "sequence": 45,
+      "week": 10,
+      "phase": "Peak",
+      "weekly_goal": "Very hard week; keep conditioning short and intense.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W10D2",
+      "sequence": 46,
+      "week": 10,
+      "phase": "Peak",
+      "weekly_goal": "Very hard week; keep conditioning short and intense.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W10D3",
+      "sequence": 47,
+      "week": 10,
+      "phase": "Peak",
+      "weekly_goal": "Very hard week; keep conditioning short and intense.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W10D4",
+      "sequence": 48,
+      "week": 10,
+      "phase": "Peak",
+      "weekly_goal": "Very hard week; keep conditioning short and intense.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W10D5",
+      "sequence": 49,
+      "week": 10,
+      "phase": "Peak",
+      "weekly_goal": "Very hard week; keep conditioning short and intense.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W11D1",
+      "sequence": 50,
+      "week": 11,
+      "phase": "Peak",
+      "weekly_goal": "Peak week; go hard but avoid sloppy reps.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W11D2",
+      "sequence": 51,
+      "week": 11,
+      "phase": "Peak",
+      "weekly_goal": "Peak week; go hard but avoid sloppy reps.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W11D3",
+      "sequence": 52,
+      "week": 11,
+      "phase": "Peak",
+      "weekly_goal": "Peak week; go hard but avoid sloppy reps.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W11D4",
+      "sequence": 53,
+      "week": 11,
+      "phase": "Peak",
+      "weekly_goal": "Peak week; go hard but avoid sloppy reps.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W11D5",
+      "sequence": 54,
+      "week": 11,
+      "phase": "Peak",
+      "weekly_goal": "Peak week; go hard but avoid sloppy reps.",
+      "phase_note": "Peak block: heavy compounds, hard accessories, short intense conditioning.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    },
+    {
+      "id": "W12D1",
+      "sequence": 55,
+      "week": 12,
+      "phase": "Deload + Test",
+      "weekly_goal": "Deload, recover, and test clean rep PRs.",
+      "phase_note": "Deload/test week: use 60\u201370% load except planned clean rep tests.",
+      "day_name": "Monday",
+      "focus": "Legs Strength",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Hack Squat or Leg Press",
+          "4\u00d78",
+          "2 min",
+          "Heavy, controlled reps"
+        ],
+        [
+          "Romanian Deadlift",
+          "4\u00d710",
+          "90 sec",
+          "3-second lowering"
+        ],
+        [
+          "Bulgarian Split Squat",
+          "3\u00d710 each leg",
+          "90 sec",
+          "Use dumbbells if possible"
+        ],
+        [
+          "Seated Leg Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze each rep"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Controlled burn"
+        ],
+        [
+          "Standing Calf Raise",
+          "4\u00d715\u201320",
+          "60 sec",
+          "Pause at top"
+        ]
+      ],
+      "core": [
+        [
+          "Hanging Leg Raise",
+          "3\u00d710\u201312"
+        ],
+        [
+          "Cable Crunch",
+          "3\u00d715"
+        ]
+      ],
+      "cardio": "12\u201315 min incline treadmill or StairMaster"
+    },
+    {
+      "id": "W12D2",
+      "sequence": 56,
+      "week": 12,
+      "phase": "Deload + Test",
+      "weekly_goal": "Deload, recover, and test clean rep PRs.",
+      "phase_note": "Deload/test week: use 60\u201370% load except planned clean rep tests.",
+      "day_name": "Tuesday",
+      "focus": "Push",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Dumbbell Press",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Main chest builder"
+        ],
+        [
+          "Flat Dumbbell Press",
+          "3\u00d710",
+          "90 sec",
+          "Full range"
+        ],
+        [
+          "Seated Dumbbell Shoulder Press",
+          "3\u00d78\u201310",
+          "90 sec",
+          "Strict form"
+        ],
+        [
+          "Cable Lateral Raise",
+          "4\u00d712\u201315",
+          "60 sec",
+          "Constant tension"
+        ],
+        [
+          "Pec Deck or Cable Fly",
+          "3\u00d715",
+          "60 sec",
+          "Deep stretch"
+        ],
+        [
+          "Rope Pushdown",
+          "3\u00d712",
+          "60 sec",
+          "Lockout squeeze"
+        ],
+        [
+          "Overhead Triceps Extension",
+          "3\u00d712",
+          "60 sec",
+          "Long head focus"
+        ]
+      ],
+      "core": [],
+      "cardio": "8 rounds battle ropes or assault bike: 20 sec hard / 40 sec easy"
+    },
+    {
+      "id": "W12D3",
+      "sequence": 57,
+      "week": 12,
+      "phase": "Deload + Test",
+      "weekly_goal": "Deload, recover, and test clean rep PRs.",
+      "phase_note": "Deload/test week: use 60\u201370% load except planned clean rep tests.",
+      "day_name": "Wednesday",
+      "focus": "Pull",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Pull-Ups or Lat Pulldown",
+          "4\u00d78\u201310",
+          "90 sec",
+          "Full stretch"
+        ],
+        [
+          "Chest-Supported Row",
+          "4\u00d710",
+          "90 sec",
+          "No momentum"
+        ],
+        [
+          "Single-Arm Dumbbell Row",
+          "3\u00d710 each side",
+          "75 sec",
+          "Elbow back"
+        ],
+        [
+          "Seated Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze shoulder blades"
+        ],
+        [
+          "Face Pull",
+          "3\u00d715",
+          "60 sec",
+          "Rear delts/posture"
+        ],
+        [
+          "Hammer Curl",
+          "3\u00d710",
+          "60 sec",
+          "Controlled"
+        ],
+        [
+          "EZ Bar Curl",
+          "3\u00d712",
+          "60 sec",
+          "No swinging"
+        ]
+      ],
+      "core": [
+        [
+          "Reverse Crunch",
+          "3\u00d715"
+        ],
+        [
+          "Side Plank",
+          "3\u00d730\u201345 sec each side"
+        ]
+      ],
+      "cardio": "10 min row intervals: 30 sec hard / 30 sec easy"
+    },
+    {
+      "id": "W12D4",
+      "sequence": 58,
+      "week": 12,
+      "phase": "Deload + Test",
+      "weekly_goal": "Deload, recover, and test clean rep PRs.",
+      "phase_note": "Deload/test week: use 60\u201370% load except planned clean rep tests.",
+      "day_name": "Thursday",
+      "focus": "Upper Hypertrophy",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Incline Smith Machine Press",
+          "4\u00d710",
+          "90 sec",
+          "Upper chest"
+        ],
+        [
+          "Machine Chest Press",
+          "3\u00d712",
+          "75 sec",
+          "Controlled reps"
+        ],
+        [
+          "Lat Pulldown",
+          "3\u00d712",
+          "75 sec",
+          "Wide or neutral grip"
+        ],
+        [
+          "Cable Row",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Dumbbell Lateral Raise",
+          "4\u00d715",
+          "60 sec",
+          "Burnout focus"
+        ],
+        [
+          "Rear Delt Fly",
+          "3\u00d715",
+          "60 sec",
+          "Strict form"
+        ],
+        [
+          "Preacher Curl",
+          "3\u00d712",
+          "60 sec",
+          "Full extension"
+        ],
+        [
+          "Skull Crusher",
+          "3\u00d712",
+          "60 sec",
+          "Elbows stable"
+        ]
+      ],
+      "core": [],
+      "cardio": "15 min incline walk"
+    },
+    {
+      "id": "W12D5",
+      "sequence": 59,
+      "week": 12,
+      "phase": "Deload + Test",
+      "weekly_goal": "Deload, recover, and test clean rep PRs.",
+      "phase_note": "Deload/test week: use 60\u201370% load except planned clean rep tests.",
+      "day_name": "Friday",
+      "focus": "Lower + Conditioning",
+      "duration_minutes": 60,
+      "exercises": [
+        [
+          "Trap Bar Deadlift",
+          "4\u00d76",
+          "2\u20133 min",
+          "Explosive but clean"
+        ],
+        [
+          "Front Squat, Goblet Squat, or Hack Squat",
+          "4\u00d78",
+          "2 min",
+          "No back squat needed"
+        ],
+        [
+          "Walking Lunges",
+          "3\u00d720 steps",
+          "90 sec",
+          "Steady pace"
+        ],
+        [
+          "Lying Hamstring Curl",
+          "3\u00d712",
+          "75 sec",
+          "Squeeze"
+        ],
+        [
+          "Leg Extension",
+          "3\u00d715",
+          "60 sec",
+          "Burnout"
+        ],
+        [
+          "Seated Calf Raise",
+          "4\u00d720",
+          "60 sec",
+          "Full range"
+        ]
+      ],
+      "core": [],
+      "cardio": "4 rounds: 15 KB swings, 10 burpees, 250m row, rest 60 sec"
+    }
+  ]
+}

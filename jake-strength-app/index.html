@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090b10">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Strength">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<title>Jake's Strength App</title>
+<style>
+:root{--bg:#090b10;--card:#151923;--card2:#1d2330;--text:#f4f7fb;--muted:#9ca9bc;--accent:#73e0a9;--accent2:#6aa7ff;--warn:#ffd166;--danger:#ff7d7d;--border:#2a3242}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#090b10,#111723);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}.app{max-width:540px;margin:0 auto;min-height:100vh;padding:16px 14px 90px}.hero{padding:18px;border-radius:26px;background:linear-gradient(135deg,#1a2333,#10141d);border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.25)}.kicker{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}h1{font-size:31px;line-height:1;margin:10px 0 8px}.sub,.small{color:var(--muted);font-size:14px;line-height:1.45}.progress{height:10px;border-radius:99px;background:#2b3342;overflow:hidden;margin:16px 0 7px}.progress>div{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px}.meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.card{background:rgba(21,25,35,.94);border:1px solid var(--border);border-radius:22px;padding:16px;margin:12px 0}.row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}h2{margin:0 0 5px;font-size:22px}.badge{background:#263145;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900;white-space:nowrap}.section-title{margin:18px 0 8px;color:var(--accent);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.exercise{padding:13px 0;border-top:1px solid var(--border)}.exercise:first-child{border-top:0}.ex-name{font-weight:900;margin-bottom:6px}.ex-done .ex-name{text-decoration:line-through;color:var(--muted)}.ex-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;color:var(--muted);font-size:13px}.note{color:var(--muted);font-size:13px;margin-top:6px}.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}button,input,textarea{font:inherit}.primary,.secondary,.danger{border:0;border-radius:16px;padding:13px 10px;font-weight:900}.primary{background:var(--accent);color:#08100c}.secondary{background:var(--card2);color:var(--text);border:1px solid var(--border)}.danger{background:#3a2027;color:#ffb3b3;border:1px solid #5c2d38;width:100%;margin-top:10px}.status{display:inline-block;margin-top:8px;padding:6px 9px;border-radius:999px;font-size:12px;font-weight:900}.done{background:#143728;color:var(--accent)}.skipped{background:#3d3420;color:var(--warn)}.next{background:#263145;color:var(--accent2)}.day-chip{width:100%;text-align:left;margin:7px 0;border:1px solid var(--border);background:var(--card2);color:var(--text);border-radius:16px;padding:13px}.day-chip strong{display:block}.day-chip span{color:var(--muted);font-size:13px}.bottom-nav{position:fixed;left:50%;transform:translateX(-50%);bottom:12px;width:min(508px,calc(100% - 24px));display:grid;grid-template-columns:repeat(5,1fr);gap:8px;background:rgba(9,11,16,.86);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:22px;padding:8px}.bottom-nav button{background:transparent;border:0;color:var(--muted);font-size:12px;font-weight:900;padding:10px 4px;border-radius:14px}.bottom-nav button.active{background:var(--card2);color:var(--accent)}.hidden{display:none}ul{margin:8px 0 0 18px;padding:0;color:var(--muted);line-height:1.6}.pill{display:inline-block;border:1px solid var(--border);border-radius:999px;padding:7px 10px;color:var(--muted);font-size:12px;margin:4px 4px 0 0}.checkrow{display:flex;gap:10px;align-items:flex-start}.checkbox{width:24px;height:24px;border:1px solid var(--border);background:var(--card2);border-radius:8px;color:var(--accent);font-weight:900;display:grid;place-items:center;flex:0 0 auto}.timer{font-size:46px;font-weight:900;letter-spacing:.02em}.timerBtns{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.summaryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.metric{background:var(--card2);border:1px solid var(--border);padding:12px;border-radius:16px;text-align:center}.metric b{display:block;font-size:20px}.textarea{width:100%;min-height:90px;border-radius:16px;border:1px solid var(--border);background:var(--card2);color:var(--text);padding:12px}.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:86px;background:#143728;color:var(--accent);border:1px solid #1f6a4a;border-radius:999px;padding:10px 14px;font-weight:900;display:none}.toast.show{display:block}
+
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.input{width:100%;border-radius:14px;border:1px solid var(--border);background:var(--card2);color:var(--text);padding:12px}.chart{height:180px;display:flex;align-items:flex-end;gap:6px;padding-top:18px}.bar{flex:1;background:linear-gradient(180deg,var(--accent2),var(--accent));border-radius:8px 8px 2px 2px;min-height:4px;position:relative}.bar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:10px;color:var(--muted)}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.cal-head,.cal-day{aspect-ratio:1;display:grid;place-items:center;border-radius:10px;font-size:11px}.cal-head{color:var(--muted)}.cal-day{background:var(--card2);border:1px solid var(--border)}.cal-day.completed{background:#143728;color:var(--accent)}.cal-day.skipped{background:#3d3420;color:var(--warn)}.photo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.photo-slot{background:var(--card2);border:1px dashed var(--border);border-radius:16px;min-height:130px;display:grid;place-items:center;overflow:hidden}.photo-slot img{width:100%;height:100%;object-fit:cover}.list-row{padding:12px 0;border-top:1px solid var(--border)}.list-row:first-child{border-top:0}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="hero">
+    <div class="kicker">Version 0.3 • Progress Tracking</div>
+    <h1>Jake's Strength App</h1>
+    <div class="sub">Workouts, body-weight trends, measurements, progress photos, PRs, milestones, and a completed-workout calendar.</div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div class="meta"><span id="workoutLabel"></span><span id="phaseLabel"></span></div>
+  </div>
+
+  <div id="todayView">
+    <div class="card">
+      <div class="row"><div><h2 id="todayTitle"></h2><div class="small" id="todaySub"></div><div class="small" id="scheduledDate"></div><div id="statusPill"></div></div><div class="badge" id="duration"></div></div>
+      <div class="action-grid"><button class="primary" onclick="completeWorkout()">Complete Workout</button><button class="secondary" onclick="skipWorkout()">Skip / Push Back</button></div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">Today’s Progress</div>
+      <div class="summaryGrid">
+        <div class="metric"><b id="exerciseDoneCount">0/0</b><span class="small">Exercises</span></div>
+        <div class="metric"><b id="streakCount">0</b><span class="small">Streak</span></div>
+        <div class="metric"><b id="completePct">0%</b><span class="small">Done</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="section-title">Rest Timer</div>
+      <div class="timer" id="timerText">02:00</div>
+      <div class="timerBtns">
+        <button class="secondary" onclick="setTimer(60)">1:00</button>
+        <button class="secondary" onclick="setTimer(90)">1:30</button>
+        <button class="secondary" onclick="setTimer(120)">2:00</button>
+      </div>
+      <div class="action-grid">
+        <button class="primary" onclick="toggleTimer()" id="timerToggle">Start</button>
+        <button class="secondary" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+
+    <div class="card"><div class="section-title">Phase Note</div><div class="small" id="phaseNote"></div></div>
+
+    <div class="card"><div class="section-title">Lift</div><div id="exerciseList"></div><div id="coreBlock"></div><div class="section-title">Cardio / Finisher</div><div class="small" id="cardioText"></div></div>
+
+    <div class="card">
+      <div class="section-title">Workout Notes</div>
+      <textarea class="textarea" id="workoutNotes" placeholder="How did it feel? Any pain, wins, or equipment swaps?" oninput="saveNotes()"></textarea>
+    </div>
+  </div>
+
+  <div id="dashboardView" class="hidden">
+    <div class="card"><h2>Good Morning, Jake</h2><div class="small" id="dashToday"></div></div>
+    <div class="card">
+      <div class="section-title">Program Snapshot</div>
+      <div class="summaryGrid">
+        <div class="metric"><b id="dashCompleted">0</b><span class="small">Done</span></div>
+        <div class="metric"><b id="dashSkipped">0</b><span class="small">Skipped</span></div>
+        <div class="metric"><b id="dashWeek">1</b><span class="small">Week</span></div>
+      </div>
+    </div>
+    <div class="card"><h2>Coach Note</h2><div class="small" id="coachNote"></div></div><div class="card"><h2>Milestones</h2><div id="milestoneList" class="small"></div></div>
+  </div>
+
+  <div id="weekView" class="hidden"><div class="card"><h2>Upcoming Workouts</h2><div class="small">This list automatically moves when you complete or skip workouts.</div><div class="section-title">Next 10</div><div id="upcomingList"></div></div></div>
+
+
+  <div id="progressView" class="hidden">
+    <div class="card">
+      <h2>Body Weight</h2>
+      <div class="form-grid"><input class="input" id="weightInput" type="number" step="0.1" placeholder="Weight (lb)"><input class="input" id="weightDate" type="date"></div>
+      <button class="primary" style="width:100%;margin-top:10px" onclick="addWeight()">Add Weight</button>
+      <div class="chart" id="weightChart"></div>
+      <div class="small" id="weightSummary"></div>
+    </div>
+    <div class="card">
+      <h2>Measurements</h2>
+      <div class="form-grid"><input class="input" id="chestInput" type="number" step="0.1" placeholder="Chest (in)"><input class="input" id="waistInput" type="number" step="0.1" placeholder="Waist (in)"><input class="input" id="armInput" type="number" step="0.1" placeholder="Arm (in)"><input class="input" id="measurementDate" type="date"></div>
+      <button class="primary" style="width:100%;margin-top:10px" onclick="addMeasurement()">Save Measurements</button>
+      <div id="measurementList"></div>
+    </div>
+    <div class="card">
+      <h2>Progress Photos</h2>
+      <div class="photo-grid">
+        <label class="photo-slot"><input type="file" accept="image/*" hidden onchange="savePhoto(event,'front')"><span id="frontPhotoLabel">Add Front Photo</span><img id="frontPhoto" class="hidden"></label>
+        <label class="photo-slot"><input type="file" accept="image/*" hidden onchange="savePhoto(event,'side')"><span id="sidePhotoLabel">Add Side Photo</span><img id="sidePhoto" class="hidden"></label>
+      </div>
+      <div class="small" style="margin-top:8px">Photos stay on this device.</div>
+    </div>
+  </div>
+
+  <div id="recordsView" class="hidden">
+    <div class="card">
+      <h2>Personal Records</h2>
+      <input class="input" id="prExercise" placeholder="Exercise">
+      <div class="form-grid" style="margin-top:10px"><input class="input" id="prWeight" type="number" step="0.5" placeholder="Weight"><input class="input" id="prReps" type="number" placeholder="Reps"></div>
+      <button class="primary" style="width:100%;margin-top:10px" onclick="addPR()">Add PR</button>
+      <div id="prList"></div>
+    </div>
+    <div class="card">
+      <h2>Workout Calendar</h2>
+      <div class="calendar" id="calendar"></div>
+      <div class="small" style="margin-top:10px">Green = completed. Yellow = skipped/pushed.</div>
+    </div>
+  </div>
+
+  <div id="settingsView" class="hidden">
+    <div class="card"><h2>Settings</h2><div class="small" id="settingsText"></div><button class="danger" onclick="resetProgress()">Reset Progress</button></div>
+    <div class="card"><h2>Next Sprint</h2><ul><li>Body weight tracking</li><li>Progress photos</li><li>PR tracking</li><li>Calendar view</li></ul></div>
+  </div>
+</div>
+<div class="bottom-nav">
+<button class="active" onclick="showView('todayView',this)">Today</button>
+<button onclick="showView('dashboardView',this)">Dashboard</button>
+<button onclick="showView('progressView',this)">Progress</button>
+<button onclick="showView('recordsView',this)">Records</button>
+<button onclick="showView('weekView',this)">Week</button>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+let PROGRAM=null;
+const KEY="jakes_strength_pwa_progress_v02";
+let state=JSON.parse(localStorage.getItem(KEY)||"null")||{currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{}};
+let timerSeconds=120, timerRemaining=120, timerInterval=null;
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function toast(msg){let t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1800)}
+function startDate(){return new Date(PROGRAM.start_date+"T06:00:00")}
+function addTrainingDays(start,n){let d=new Date(start);let added=0;while(added<n){d.setDate(d.getDate()+1);let day=d.getDay();if(day>=1&&day<=5)added++}return d}
+function current(){return PROGRAM.workouts[Math.min(state.currentIndex,PROGRAM.workouts.length-1)]}
+function scheduledDateFor(i){return addTrainingDays(startDate(),i+state.dateShift).toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric",year:"numeric"})}
+function statusFor(w){if(state.completed.includes(w.id))return '<span class="status done">Completed</span>'; if(state.skipped.find(s=>s.id===w.id))return '<span class="status skipped">Skipped before — pushed back</span>'; if(w.sequence===state.currentIndex)return '<span class="status next">Next workout</span>'; return ''}
+function allItems(w){return [...w.exercises.map((e,i)=>({kind:"exercise",i,name:e[0],meta:e})),...w.core.map((c,i)=>({kind:"core",i,name:c[0],meta:c}))]}
+function checkedMap(w){return state.exerciseChecks[w.id]||{}}
+function toggleItem(id){let w=current();state.exerciseChecks[w.id]=checkedMap(w);state.exerciseChecks[w.id][id]=!state.exerciseChecks[w.id][id];save();render()}
+function saveNotes(){let w=current();state.notes[w.id]=document.getElementById("workoutNotes").value;save()}
+function completeWorkout(){let w=current();if(!state.completed.includes(w.id))state.completed.push(w.id);state.streak=(state.streak||0)+1;state.lastCompleteDate=new Date().toISOString();state.completedDates=state.completedDates||{};state.completedDates[w.id]=state.lastCompleteDate;if(state.currentIndex<PROGRAM.workouts.length-1)state.currentIndex++;save();toast("Workout complete");render()}
+function skipWorkout(){let w=current();state.skipped.push({id:w.id,date:new Date().toISOString()});state.dateShift++;save();toast("Workout pushed back");render()}
+function resetProgress(){state={currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{}};save();render();toast("Progress reset")}
+function jumpTo(i){state.currentIndex=i;save();showView('todayView',document.querySelectorAll('.bottom-nav button')[0])}
+function showView(id,btn){['todayView','dashboardView','progressView','recordsView','weekView','settingsView'].forEach(v=>document.getElementById(v).classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.bottom-nav button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');render()}
+function setTimer(sec){timerSeconds=sec;timerRemaining=sec;stopTimer();renderTimer()}
+function renderTimer(){let m=Math.floor(timerRemaining/60).toString().padStart(2,"0");let s=(timerRemaining%60).toString().padStart(2,"0");document.getElementById("timerText").textContent=`${m}:${s}`}
+function stopTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null}document.getElementById("timerToggle").textContent="Start"}
+function toggleTimer(){if(timerInterval){stopTimer();return}document.getElementById("timerToggle").textContent="Pause";timerInterval=setInterval(()=>{timerRemaining--;renderTimer();if(timerRemaining<=0){stopTimer();timerRemaining=timerSeconds;renderTimer();toast("Rest complete")}},1000)}
+function resetTimer(){timerRemaining=timerSeconds;stopTimer();renderTimer()}
+
+function addWeight(){let value=parseFloat(document.getElementById("weightInput").value),date=document.getElementById("weightDate").value||new Date().toISOString().slice(0,10);if(!value)return;state.weights=state.weights||[];state.weights.push({value,date});state.weights.sort((a,b)=>a.date.localeCompare(b.date));save();render();toast("Weight added")}
+function addMeasurement(){let date=document.getElementById("measurementDate").value||new Date().toISOString().slice(0,10);state.measurements=state.measurements||[];state.measurements.push({date,chest:parseFloat(document.getElementById("chestInput").value)||null,waist:parseFloat(document.getElementById("waistInput").value)||null,arm:parseFloat(document.getElementById("armInput").value)||null});save();render();toast("Measurements saved")}
+function savePhoto(event,type){let file=event.target.files[0];if(!file)return;let reader=new FileReader();reader.onload=e=>{state.photos=state.photos||{};state.photos[type]=e.target.result;save();render();toast("Photo saved")};reader.readAsDataURL(file)}
+function addPR(){let exercise=document.getElementById("prExercise").value.trim(),weight=parseFloat(document.getElementById("prWeight").value),reps=parseInt(document.getElementById("prReps").value);if(!exercise||!weight||!reps)return;state.prs=state.prs||[];state.prs.push({exercise,weight,reps,date:new Date().toISOString().slice(0,10)});save();render();toast("PR added")}
+function renderWeight(){let data=(state.weights||[]).slice(-8),chart=document.getElementById("weightChart");if(!chart)return;if(!data.length){chart.innerHTML='<div class="small">No weight entries yet.</div>';document.getElementById("weightSummary").textContent="";return}let vals=data.map(x=>x.value),min=Math.min(...vals),max=Math.max(...vals),range=Math.max(1,max-min);chart.innerHTML=data.map(x=>`<div class="bar" style="height:${30+((x.value-min)/range)*130}px"><span>${x.value}</span></div>`).join('');let all=state.weights,first=all[0].value,last=all[all.length-1].value,diff=(last-first).toFixed(1);document.getElementById("weightSummary").textContent=`Start: ${first} lb • Latest: ${last} lb • Change: ${diff>=0?'+':''}${diff} lb`}
+function renderCalendar(){let el=document.getElementById("calendar");if(!el)return;let now=new Date(),year=now.getFullYear(),month=now.getMonth(),first=new Date(year,month,1),days=new Date(year,month+1,0).getDate(),start=first.getDay();let html=["S","M","T","W","T","F","S"].map(d=>`<div class="cal-head">${d}</div>`).join('');for(let i=0;i<start;i++)html+='<div></div>';for(let d=1;d<=days;d++){let key=`${year}-${String(month+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`,cls="";if(Object.values(state.completedDates||{}).some(v=>v.slice(0,10)===key))cls="completed";else if((state.skipped||[]).some(v=>v.date.slice(0,10)===key))cls="skipped";html+=`<div class="cal-day ${cls}">${d}</div>`}el.innerHTML=html}
+function renderPhotos(){["front","side"].forEach(type=>{let img=document.getElementById(type+"Photo"),label=document.getElementById(type+"PhotoLabel");if(!img||!label)return;if((state.photos||{})[type]){img.src=state.photos[type];img.classList.remove("hidden");label.classList.add("hidden")}else{img.classList.add("hidden");label.classList.remove("hidden")}})}
+
+function render(){if(!PROGRAM)return;let w=current();let items=allItems(w);let checks=checkedMap(w);let done=items.filter((x,idx)=>checks[`${x.kind}-${x.i}`]).length;let pct=items.length?Math.round(done/items.length*100):0;document.getElementById('workoutLabel').textContent=`Workout ${state.currentIndex+1} / ${PROGRAM.workouts.length}`;document.getElementById('phaseLabel').textContent=`Week ${w.week}: ${w.phase}`;document.getElementById('progressBar').style.width=`${((state.currentIndex+1)/PROGRAM.workouts.length)*100}%`;document.getElementById('todayTitle').textContent=`Week ${w.week} — ${w.focus}`;document.getElementById('todaySub').textContent=`${w.day_name} • ${w.weekly_goal}`;document.getElementById('scheduledDate').textContent=`Scheduled: ${scheduledDateFor(w.sequence)}`;document.getElementById('duration').textContent=`${w.duration_minutes} min`;document.getElementById('statusPill').innerHTML=statusFor(w);document.getElementById('phaseNote').textContent=w.phase_note;document.getElementById('exerciseDoneCount').textContent=`${done}/${items.length}`;document.getElementById('streakCount').textContent=state.streak||0;document.getElementById('completePct').textContent=`${pct}%`;document.getElementById('exerciseList').innerHTML=w.exercises.map((e,i)=>{let id=`exercise-${i}`, on=checks[id];return `<div class="exercise ${on?'ex-done':''}"><div class="checkrow"><button class="checkbox" onclick="toggleItem('${id}')">${on?'✓':''}</button><div><div class="ex-name">${e[0]}</div><div class="ex-grid"><div>Sets/Reps: <b>${e[1]}</b></div><div>Rest: <b>${e[2]}</b></div></div><div class="note">${e[3]}</div></div></div></div>`}).join('');document.getElementById('coreBlock').innerHTML=w.core.length?`<div class="section-title">Abs / Core</div>`+w.core.map((c,i)=>{let id=`core-${i}`,on=checks[id];return `<div class="exercise ${on?'ex-done':''}"><div class="checkrow"><button class="checkbox" onclick="toggleItem('${id}')">${on?'✓':''}</button><div><div class="ex-name">${c[0]}</div><div class="small">${c[1]}</div></div></div></div>`}).join(''):"";document.getElementById('cardioText').textContent=w.cardio;document.getElementById("workoutNotes").value=state.notes[w.id]||"";document.getElementById('upcomingList').innerHTML=PROGRAM.workouts.slice(state.currentIndex,state.currentIndex+10).map(x=>`<button class="day-chip" onclick="jumpTo(${x.sequence})"><strong>${scheduledDateFor(x.sequence)} — W${x.week} ${x.focus}</strong><span>${x.duration_minutes} min • ${x.cardio}</span>${statusFor(x)}</button>`).join('');document.getElementById('settingsText').innerHTML=`Completed: <b>${state.completed.length}</b><br>Skipped/pushed days: <b>${state.dateShift}</b><br>Current workout: <b>${state.currentIndex+1}</b><br>Saved notes: <b>${Object.keys(state.notes||{}).length}</b>`;document.getElementById("dashToday").innerHTML=`Today is <b>${w.focus}</b>, scheduled for ${scheduledDateFor(w.sequence)}. Estimated time: ${w.duration_minutes} minutes.`;document.getElementById("dashCompleted").textContent=state.completed.length;document.getElementById("dashSkipped").textContent=state.dateShift;document.getElementById("dashWeek").textContent=w.week;document.getElementById("coachNote").textContent=pct<50?"Start with the main lift and keep 1–2 reps in reserve. Your goal is effort plus clean form.":pct<100?"Good momentum. Finish the accessories, then hit the cardio/finisher.":"Workout checklist is complete. Add notes, then tap Complete Workout.";
+let ms=[];if(state.completed.length>=5)ms.push("Completed your first full week.");if((state.streak||0)>=3)ms.push(`${state.streak}-workout streak.`);if((state.weights||[]).length>=2)ms.push("Body-weight trend started.");if((state.prs||[]).length>=1)ms.push("First PR logged.");let ml=document.getElementById("milestoneList");if(ml)ml.innerHTML=ms.length?ms.map(m=>`<div class="list-row">✓ ${m}</div>`).join(""):"Your first milestones will appear as you train and log progress.";
+let mlist=document.getElementById("measurementList");if(mlist)mlist.innerHTML=(state.measurements||[]).slice().reverse().map(m=>`<div class="list-row"><b>${m.date}</b><div class="small">Chest: ${m.chest??"—"} • Waist: ${m.waist??"—"} • Arm: ${m.arm??"—"}</div></div>`).join("");
+let plist=document.getElementById("prList");if(plist)plist.innerHTML=(state.prs||[]).slice().reverse().map(p=>`<div class="list-row"><b>${p.exercise}</b><div class="small">${p.weight} lb × ${p.reps} reps • ${p.date}</div></div>`).join("");
+renderWeight();renderCalendar();renderPhotos();renderTimer()}
+fetch("./program.json").then(r=>r.json()).then(data=>{PROGRAM=data;let today=new Date().toISOString().slice(0,10);document.getElementById("weightDate").value=today;document.getElementById("measurementDate").value=today;render()});
+if("serviceWorker" in navigator){navigator.serviceWorker.register("./service-worker.js")}
+</script>
+</body>
+</html>
