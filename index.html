@@ -578,7 +578,8 @@ body{background:linear-gradient(180deg,#000,#101010)}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 let PROGRAM=null;
-const KEY="jakes_strength_pwa_progress_v02";
+const OLD_KEY="jakes_strength_pwa_progress_v07";
+const KEY="jakes_strength_pwa_progress_v08";
 let state=JSON.parse(localStorage.getItem(KEY)||localStorage.getItem(OLD_KEY)||"null")||{currentIndex:0,completed:[],skipped:[],dateShift:0,exerciseChecks:{},notes:{},streak:0,lastCompleteDate:null,completedDates:{},weights:[],measurements:[],prs:[],photos:{},nutritionGoals:{calories:2700,protein:175,water:96},nutritionByDate:{},recoveryByDate:{},exerciseNotes:{},exerciseSwaps:{},backupMeta:{},appSettings:{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true},guidedIndex:0,cloudMeta:{lastSync:null,lastLocalChange:null}};
 state.nutritionGoals=state.nutritionGoals||{calories:2700,protein:175,water:96};state.recoveryByDate=state.recoveryByDate||{};state.exerciseNotes=state.exerciseNotes||{};state.exerciseSwaps=state.exerciseSwaps||{};state.backupMeta=state.backupMeta||{};state.appSettings=state.appSettings||{startDate:"2026-07-20",units:"imperial",defaultRest:120,showCardio:true,showCore:true};state.guidedIndex=state.guidedIndex||0;state.cloudMeta=state.cloudMeta||{lastSync:null,lastLocalChange:null};localStorage.setItem(KEY,JSON.stringify(state));state.nutritionByDate=state.nutritionByDate||{};
 let timerSeconds=120, timerRemaining=120, timerInterval=null;
