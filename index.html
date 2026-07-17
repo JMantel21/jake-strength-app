@@ -1109,8 +1109,33 @@ if(recoveryToday){
 }
 
 renderWeight();renderCalendar();renderPhotos();renderNutrition();renderRecovery();renderBackup();renderHistory();renderWeeklyReview();renderSettings();renderCloudAccount();renderTimer()}
-fetch("./program.json").then(r=>r.json()).then(data=>{PROGRAM=data;let today=new Date().toISOString().slice(0,10);document.getElementById("weightDate").value=today;document.getElementById("measurementDate").value=today;render()});
-if("serviceWorker" in navigator){navigator.serviceWorker.register("./service-worker.js")}
+async function startApp() {
+  try {
+    await initializeAuth();
+
+    const response = await fetch("./program.json");
+    PROGRAM = await response.json();
+
+    const today = new Date().toISOString().slice(0, 10);
+    document.getElementById("weightDate").value = today;
+    document.getElementById("measurementDate").value = today;
+
+    render();
+  } catch (error) {
+    console.error("App startup failed:", error);
+
+    const status = document.getElementById("authStatus");
+    if (status) {
+      status.textContent = `Sign-in error: ${error.message}`;
+    }
+  }
+}
+
+startApp();
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js");
+}
 </script>
 </body>
 </html>
